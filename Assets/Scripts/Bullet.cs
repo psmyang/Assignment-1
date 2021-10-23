@@ -1,3 +1,21 @@
+//*********************************************************************************************************
+// GAME2014-F2021-Assignment 1-101235517.C# Unity by Mingkun Yang (C) October 22th 2021 All Rights Reserved.
+//
+// Name: Mingkun Yang 
+//
+// StudentID: 101235517
+//
+// Assignment 1 submission.
+//
+// Description: Modify the Space Shooter Demo
+//
+// Modified: October 22th 2021
+//
+// File Name: Bullet.cs
+//
+//******************************************************************************************************
+
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -44,19 +62,24 @@ public class Bullet : MonoBehaviour
     {
         if (other.CompareTag("Enemy"))
         {
-            ScoreCount.scoreAmount += 1;
+            
 
             Destroy(other.gameObject);
             SoundManager.PlaySound("Explosion");
+            ScoreCount.scoreAmount = ScoreCount.scoreAmount + 1;
 
             Destroy(this.gameObject);
         }
 
         if (ScoreCount.scoreAmount == 11)
         {
-            SceneManager.LoadScene("WinScene");
-
-            //SceneManager.LoadScene(Bullet);
+            StartCoroutine(Timedelay());
         }
+    }
+
+    public IEnumerator Timedelay()
+    {
+        yield return new WaitForSeconds(0.2f);
+        SceneManager.LoadScene("WinScene");
     }
 }

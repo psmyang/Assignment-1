@@ -1,3 +1,22 @@
+//*********************************************************************************************************
+// GAME2014-F2021-Assignment 1-101235517.C# Unity by Mingkun Yang (C) October 22th 2021 All Rights Reserved.
+//
+// Name: Mingkun Yang 
+//
+// StudentID: 101235517
+//
+// Assignment 1 submission.
+//
+// Description: Modify the Space Shooter Demo
+//
+// Modified: October 22th 2021
+//
+// File Name: Spawner.cs
+//
+// Citation: https://www.youtube.com/watch?v=KC0uO7nQ9pc&list=PLiz4aBfWzNwQpjSKpkJVJwiSl-9UGXdhX&index=41
+//******************************************************************************************************
+
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
