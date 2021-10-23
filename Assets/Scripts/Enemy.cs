@@ -1,16 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Enemy : MonoBehaviour
 {
     public float speed;
+    //public Transform enemy;
+
     private WayPoints Wpoints;
 
     private int waypointIndex;
 
+    Rigidbody2D rb;
+
     void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
         Wpoints = GameObject.FindGameObjectWithTag("WayPoints").GetComponent<WayPoints>();
     }
     

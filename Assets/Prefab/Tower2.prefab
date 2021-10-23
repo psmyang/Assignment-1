@@ -75,6 +75,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07e7d42437f28fe499420c59ec4cd457, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 2394766315047020741, guid: e7aca0b5c5bb4f542b60801bf81d577e, type: 3}
+  tower: {fileID: 2642998110230001683}
 --- !u!1 &2642998110233735475
 GameObject:
   m_ObjectHideFlags: 0
