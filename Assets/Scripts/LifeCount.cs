@@ -7,7 +7,7 @@
 //
 // Assignment 1 submission.
 //
-// Description: Modify the Space Shooter Demo
+// Description: set initial live amount.
 //
 // Modified: October 22th 2021
 //

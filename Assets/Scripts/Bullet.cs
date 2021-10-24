@@ -7,7 +7,7 @@
 //
 // Assignment 1 submission.
 //
-// Description: Modify the Space Shooter Demo
+// Description: Bullet fleeing, bullet collision detection.
 //
 // Modified: October 22th 2021
 //
@@ -27,8 +27,6 @@ public class Bullet : MonoBehaviour
     Rigidbody2D rb;
     private Vector2 screenBounds;
 
-    //public GameObject target;
-    //public Transform targetTrans;
 
     Enemy target;
     Vector2 moveDirection;
@@ -38,12 +36,9 @@ public class Bullet : MonoBehaviour
     void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
-        //target = GameObject.Find("Enemy");
-        //targetTrans.position = target.transform.position;
         target = GameObject.FindObjectOfType<Enemy>();
         moveDirection = (target.transform.position - transform.position).normalized * speed;
         rb.velocity = new Vector2(moveDirection.x, moveDirection.y);
-        //rb.velocity = new Vector2(0, speed);
         Destroy(gameObject, 4f);
         screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
     }
@@ -57,7 +52,7 @@ public class Bullet : MonoBehaviour
         }
     }
   
-
+    // detect collision with enemy by tag
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Enemy"))

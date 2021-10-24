@@ -7,7 +7,7 @@
 //
 // Assignment 1 submission.
 //
-// Description: Modify the Space Shooter Demo
+// Description: select two types of tower and spawn anywhere of the map.
 //
 // Modified: October 22th 2021
 //

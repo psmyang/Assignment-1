@@ -7,7 +7,7 @@
 //
 // Assignment 1 submission.
 //
-// Description: Modify the Space Shooter Demo
+// Description: game over when live amount becomes to 0.
 //
 // Modified: October 22th 2021
 //

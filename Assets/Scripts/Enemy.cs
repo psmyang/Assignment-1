@@ -7,7 +7,7 @@
 //
 // Assignment 1 submission.
 //
-// Description: Modify the Space Shooter Demo
+// Description: adding enemy AI, walk throgh way point index.
 //
 // Modified: October 22th 2021
 //

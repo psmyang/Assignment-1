@@ -7,7 +7,7 @@
 //
 // Assignment 1 submission.
 //
-// Description: Modify the Space Shooter Demo
+// Description: loading sound effect files.
 //
 // Modified: October 22th 2021
 //

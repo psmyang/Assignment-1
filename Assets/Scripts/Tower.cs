@@ -7,7 +7,7 @@
 //
 // Assignment 1 submission.
 //
-// Description: Modify the Space Shooter Demo
+// Description: adding shoot bullet function
 //
 // Modified: October 22th 2021
 //
@@ -27,10 +27,6 @@ public class Tower : MonoBehaviour
     public GameObject bulletPrefab;
     public Transform tower;
 
-    private void Awake()
-    {
-        //ProjectileShootFromPosition = transform.Find("ProjectileShootFromPosition").position;
-    }
 
     private void Update()
     {       

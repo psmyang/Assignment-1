@@ -7,7 +7,7 @@
 //
 // Assignment 1 submission.
 //
-// Description: Modify the Space Shooter Demo
+// Description: adding button behaviour to each button.
 //
 // Modified: October 22th 2021
 //
@@ -37,11 +37,6 @@ public class ButtonBehaviour : MonoBehaviour
     public void OnBackButtonPressed()
     {
         SceneManager.LoadScene("Menu");
-    }
-
-    public void OnNextButtonPressed()
-    {
-        SceneManager.LoadScene("End");
     }
 
 }

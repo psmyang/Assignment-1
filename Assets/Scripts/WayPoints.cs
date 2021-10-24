@@ -7,7 +7,7 @@
 //
 // Assignment 1 submission.
 //
-// Description: Modify the Space Shooter Demo
+// Description: adding way points array.
 //
 // Modified: October 22th 2021
 //
